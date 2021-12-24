@@ -1,0 +1,70 @@
+@import "./../../config/config";
+
+.packages {
+  background: $light-bg;
+
+  .box-container {
+    @include grid(32rem);
+
+    .box {
+      text-align: center;
+      background: $white;
+      border: $border;
+      box-shadow: $box-shadow;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background: $black;
+
+        .content > * {
+          color: $white;
+        }
+
+        .btn {
+          border-color: $white;
+
+          &:hover {
+            background: $white;
+            color: $black;
+          }
+        }
+      }
+
+      .image {
+        height: 25rem;
+        overflow: hidden;
+        padding: 2rem;
+        padding-bottom: 0;
+        border-radius: 0.5rem;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 0.5rem;
+        }
+      }
+
+      .content {
+        padding: 2rem;
+
+        h3 {
+          font-size: 2rem;
+          color: $black;
+        }
+
+        p {
+          font-size: 1.5rem;
+          color: $black;
+          padding: 1rem 0;
+          line-height: 2;
+        }
+
+        .price {
+          font-size: 2rem;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

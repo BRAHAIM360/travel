@@ -1,0 +1,62 @@
+@import "./../../config/config";
+
+.search-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  transform: translateY(-110%);
+
+  &.active {
+    transform: translateY(0%);
+  }
+  #close-search {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    cursor: pointer;
+    color: $white;
+    font-size: 6rem;
+  }
+  &:hover {
+    color: $primary-color;
+    // transform: rotate(45deg);
+  }
+
+  form {
+    width: 70rem;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.2rem solid $white;
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 100%;
+      font-size: 1.7rem;
+      color: $white;
+      text-transform: none;
+      background: none;
+      padding-right: 2rem;
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+
+    label {
+      font-size: 3rem;
+      cursor: pointer;
+      color: $white;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}

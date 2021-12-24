@@ -1,0 +1,30 @@
+@import "./../../config/config";
+
+.category {
+  .box-container {
+    @include grid(29rem);
+
+    .box {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    img {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $primary-color;
+    }
+    p {
+      font-size: 1.5rem;
+      color: $black;
+      padding: 1rem 0;
+      line-height: 2;
+    }
+  }
+}

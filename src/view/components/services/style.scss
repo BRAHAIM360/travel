@@ -1,0 +1,55 @@
+@import "./../../config/config";
+
+.services {
+  background: $light-bg;
+
+  .box-container {
+    @include grid(31rem);
+
+    .box {
+      text-align: center;
+      padding: 2rem;
+      border: $border;
+      border-radius: 0.5rem;
+      background: $white;
+
+      &:hover {
+        background: $black;
+
+        img {
+          filter: invert(1);
+        }
+
+        p {
+          color: $white;
+        }
+        .btn {
+          border-color: $white;
+          color: $white;
+
+          &:hover {
+            background: $white;
+            color: $black;
+          }
+        }
+      }
+
+      img {
+        height: 10rem;
+        margin-bottom: 1;
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: $primary-color;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: $black;
+        padding: 1rem 0;
+        line-height: 2;
+      }
+    }
+  }
+}

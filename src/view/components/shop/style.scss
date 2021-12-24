@@ -1,0 +1,66 @@
+@import "./../../config/config";
+
+.shop {
+  .slide {
+    border: $border;
+
+    &:hover .image .icons {
+      transform: translateY(0rem);
+    }
+    .image {
+      position: relative;
+      overflow: hidden;
+      height: 30rem;
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .icons {
+        width: 100%;
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        text-align: center;
+        z-index: 10;
+        transform: translateY(7rem);
+        a {
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          background: $black;
+          color: $white;
+          margin: 0 0.2rem;
+
+          &:hover {
+            background: $primary-color;
+          }
+        }
+      }
+    }
+    .content {
+      padding: 1rem 0;
+      text-align: center;
+
+      h3 {
+        font-size: 2rem;
+        color: $black;
+      }
+
+      .price {
+        padding: 1rem 0;
+        padding-top: 0.5rem;
+        font-size: 2.5rem;
+        color: $primary-color;
+      }
+    }
+  }
+  .swiper-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

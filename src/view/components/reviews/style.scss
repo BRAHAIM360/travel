@@ -1,0 +1,63 @@
+@import "./../../config/config";
+
+.reviews {
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  .slide {
+    padding: 2rem;
+    .text {
+      padding: 2rem;
+      font-size: 1.6rem;
+      font-style: italic;
+      background: $light-bg;
+      border-radius: 0.5rem;
+      color: $black;
+      line-height: 2;
+      position: relative;
+      z-index: 0;
+      margin-bottom: 3rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1.5rem;
+        left: 0.7rem;
+        height: 3rem;
+        width: 3rem;
+        background: $light-bg;
+        transform: rotate(45deg);
+      }
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+      }
+      h3 {
+        font-size: 2rem;
+        color: $black;
+      }
+
+      span {
+        color: $primary-color;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .reviews {
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+}

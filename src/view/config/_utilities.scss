@@ -1,0 +1,33 @@
+@import "./config";
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: $border;
+  color: $black;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
+
+// @media (max-width: 1200px) {
+
+// }
+
+// @media (max-width: 991px) {
+
+// }
+
+// @media (max-width: 768px) {
+
+// }
+
+// @media (max-width: 450px) {
+
+// }

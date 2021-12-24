@@ -1,0 +1,41 @@
+@import "./../../config/config";
+
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./footer-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .box-container {
+    @include grid(25rem);
+
+    .box {
+      h3 {
+        font-size: 2rem;
+        padding: 1.5rem;
+        color: $white;
+      }
+
+      a {
+        display: block;
+        font-size: 1.4rem;
+        color: $white;
+        padding: 1rem;
+
+        i {
+          color: $primary-color;
+          padding-right: 0.5rem;
+        }
+
+        &:hover {
+          color: $primary-color;
+
+          i {
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
